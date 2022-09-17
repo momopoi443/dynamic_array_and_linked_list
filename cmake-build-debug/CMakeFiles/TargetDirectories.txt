@@ -1,3 +1,0 @@
-C:/Users/alex/Desktop/АСД/2-семестр/dynamic_array_and_linked_list/cmake-build-debug/CMakeFiles/lab2_1_1.dir
-C:/Users/alex/Desktop/АСД/2-семестр/dynamic_array_and_linked_list/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/alex/Desktop/АСД/2-семестр/dynamic_array_and_linked_list/cmake-build-debug/CMakeFiles/rebuild_cache.dir
