@@ -5,13 +5,6 @@
 #include "../include/LinkedList.h"
 #include "../include/DynamicArr.h"
 
-
-
-// TO DO
-//
-// переписать структуры под темплейты
-// проверить все методы на и ошибки
-
 void test() {
 
     auto* arr = new DynamicArr<Robot>();
@@ -20,21 +13,23 @@ void test() {
 
     Robot robotEx = Robot();
 
-    int size1 = 50000;
+    Robot robotEx1 = Robot(1);
 
-    int size2 = 10000;
+    int size1 = 25;
 
-    int size3 = 20000;
+    int size2 = 5;
 
-    int size4 = 5000;
+    int size3 = 10;
 
-    int size5 = 5000;
+    int size4 = 2;
+
+    int size5 = 2;
 
     clock_t startTime = clock();
 
     for (int i = 0; i < size1; ++i) {
 
-        list->pushFront(robotEx);
+        list->pushBack(robotEx);
     }
 
     clock_t endTime = clock();
@@ -62,7 +57,7 @@ void test() {
 
     for (int i = 0; i < size2; ++i) {
 
-        list->pushBack(robotEx);
+        list->pushFront(robotEx1);
     }
 
     clock_t endTime1 = clock();
@@ -118,7 +113,7 @@ void test() {
 
     for (int i = 0; i < size4; ++i) {
 
-        list->popBack();
+        list->popFront();
     }
 
     clock_t endTime3 = clock();
@@ -146,7 +141,7 @@ void test() {
 
     for (int i = 0; i < size5; ++i) {
 
-        list->popFront();
+        list->popBack();
     }
 
     clock_t endTime4 = clock();
@@ -167,7 +162,6 @@ void test() {
     time4 = (double(endTime4 - startTime4) / CLOCKS_PER_SEC);
 
     std::cout << time4 << " - time of popping from back of the dynamic array" << std::endl;
-
 }
 
 int main() {
